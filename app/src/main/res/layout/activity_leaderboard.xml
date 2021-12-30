@@ -1,0 +1,372 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.tantangan.leaderboard.LeaderboardActivity">
+
+    <ScrollView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:layout_width="0dp"
+                android:layout_height="95dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/bg_gradient_blue" />
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/iv_back"
+                android:layout_width="27dp"
+                android:layout_height="30dp"
+                android:layout_marginStart="21dp"
+                android:layout_marginTop="49dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/ic_back"
+                app:tint="@color/pure_white" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:fontFamily="@font/poppins_semibold"
+                android:text="Leaderboard"
+                android:textColor="@color/pure_white"
+                android:textSize="16sp"
+                app:layout_constraintBottom_toBottomOf="@id/iv_back"
+                app:layout_constraintStart_toEndOf="@id/iv_back"
+                app:layout_constraintTop_toTopOf="@id/iv_back" />
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/ly_1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="38dp"
+                android:layout_marginTop="45dp"
+                android:layout_marginEnd="38dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/iv_back">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/iv_2"
+                    android:layout_width="79dp"
+                    android:layout_height="79dp"
+                    android:layout_marginTop="13dp"
+                    android:src="@drawable/avatar_dummy2"
+                    app:civ_border_color="#A0AAB3"
+                    app:civ_border_width="5dp"
+                    app:layout_constraintEnd_toStartOf="@id/iv_1"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tv_rank_2"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/bg_round_second"
+                    android:fontFamily="@font/poppins_bold"
+                    android:text="2"
+                    android:textAlignment="center"
+                    android:textColor="@color/pure_white"
+                    android:textSize="10sp"
+                    app:layout_constraintBottom_toBottomOf="@id/iv_2"
+                    app:layout_constraintEnd_toEndOf="@id/iv_2"
+                    app:layout_constraintStart_toStartOf="@id/iv_2"
+                    app:layout_constraintTop_toBottomOf="@id/iv_2" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tv_name_2"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="9dp"
+                    android:fontFamily="@font/poppins_medium"
+                    android:text="Brien Lute"
+                    android:textAlignment="center"
+                    android:textColor="@android:color/black"
+                    android:textSize="12sp"
+                    app:layout_constraintEnd_toEndOf="@id/iv_2"
+                    app:layout_constraintStart_toStartOf="@id/iv_2"
+                    app:layout_constraintTop_toBottomOf="@id/tv_rank_2" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tv_sekolah_2"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="3dp"
+                    android:fontFamily="@font/roboto"
+                    android:text="SMA 78 Bandung"
+                    android:textAlignment="center"
+                    android:textColor="#969CA2"
+                    android:textSize="10sp"
+                    app:layout_constraintEnd_toEndOf="@id/tv_rank_2"
+                    app:layout_constraintStart_toStartOf="@id/tv_rank_2"
+                    app:layout_constraintTop_toBottomOf="@id/tv_name_2" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tv_xp_2"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="3dp"
+                    android:fontFamily="@font/poppins_bold"
+                    android:text="16 XP"
+                    android:textAlignment="center"
+                    android:textColor="@android:color/black"
+                    android:textSize="12sp"
+                    app:layout_constraintEnd_toEndOf="@id/tv_sekolah_2"
+                    app:layout_constraintStart_toStartOf="@id/tv_sekolah_2"
+                    app:layout_constraintTop_toBottomOf="@id/tv_sekolah_2" />
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/iv_1"
+                    android:layout_width="93dp"
+                    android:layout_height="93dp"
+                    android:src="@drawable/avatar_dummy1"
+                    app:civ_border_color="#FAB600"
+                    app:civ_border_width="5dp"
+                    app:layout_constraintEnd_toStartOf="@id/iv_3"
+                    app:layout_constraintStart_toEndOf="@id/iv_2"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tv_rank_1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/bg_round_first"
+                    android:fontFamily="@font/poppins_bold"
+                    android:text="1"
+                    android:textAlignment="center"
+                    android:textColor="@color/pure_white"
+                    android:textSize="10sp"
+                    app:layout_constraintBottom_toBottomOf="@id/iv_1"
+                    app:layout_constraintEnd_toEndOf="@id/iv_1"
+                    app:layout_constraintStart_toStartOf="@id/iv_1"
+                    app:layout_constraintTop_toBottomOf="@id/iv_1" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tv_name_1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="9dp"
+                    android:fontFamily="@font/poppins_medium"
+                    android:text="Elaine Astley"
+                    android:textAlignment="center"
+                    android:textColor="@android:color/black"
+                    android:textSize="12sp"
+                    app:layout_constraintEnd_toEndOf="@id/iv_1"
+                    app:layout_constraintStart_toStartOf="@id/iv_1"
+                    app:layout_constraintTop_toBottomOf="@id/tv_rank_1" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tv_sekolah_1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="3dp"
+                    android:fontFamily="@font/roboto"
+                    android:text="SMA 99 Tangsel"
+                    android:textAlignment="center"
+                    android:textColor="#969CA2"
+                    android:textSize="10sp"
+                    app:layout_constraintEnd_toEndOf="@id/tv_rank_1"
+                    app:layout_constraintStart_toStartOf="@id/tv_rank_1"
+                    app:layout_constraintTop_toBottomOf="@id/tv_name_1" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tv_xp_1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="3dp"
+                    android:fontFamily="@font/poppins_bold"
+                    android:text="42 XP"
+                    android:textAlignment="center"
+                    android:textColor="@android:color/black"
+                    android:textSize="12sp"
+                    app:layout_constraintEnd_toEndOf="@id/tv_sekolah_1"
+                    app:layout_constraintStart_toStartOf="@id/tv_sekolah_1"
+                    app:layout_constraintTop_toBottomOf="@id/tv_sekolah_1" />
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/iv_3"
+                    android:layout_width="79dp"
+                    android:layout_height="79dp"
+                    android:layout_marginTop="13dp"
+                    android:src="@drawable/avatar_dummy3"
+                    app:civ_border_color="#D97D5E"
+                    app:civ_border_width="5dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@id/iv_1"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tv_rank_3"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/bg_round_third"
+                    android:fontFamily="@font/poppins_bold"
+                    android:text="3"
+                    android:textAlignment="center"
+                    android:textColor="@color/pure_white"
+                    android:textSize="10sp"
+                    app:layout_constraintBottom_toBottomOf="@id/iv_3"
+                    app:layout_constraintEnd_toEndOf="@id/iv_3"
+                    app:layout_constraintStart_toStartOf="@id/iv_3"
+                    app:layout_constraintTop_toBottomOf="@id/iv_3" />
+
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tv_name_3"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="9dp"
+                    android:fontFamily="@font/poppins_medium"
+                    android:text="Jasmine L"
+                    android:textAlignment="center"
+                    android:textColor="@android:color/black"
+                    android:textSize="12sp"
+                    app:layout_constraintEnd_toEndOf="@id/iv_3"
+                    app:layout_constraintStart_toStartOf="@id/iv_3"
+                    app:layout_constraintTop_toBottomOf="@id/tv_rank_3" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tv_sekolah_3"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="3dp"
+                    android:fontFamily="@font/roboto"
+                    android:text="SMA 1 Serang"
+                    android:textAlignment="center"
+                    android:textColor="#969CA2"
+                    android:textSize="10sp"
+                    app:layout_constraintEnd_toEndOf="@id/tv_rank_3"
+                    app:layout_constraintStart_toStartOf="@id/tv_rank_3"
+                    app:layout_constraintTop_toBottomOf="@id/tv_name_3" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tv_xp_3"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="3dp"
+                    android:fontFamily="@font/poppins_bold"
+                    android:text="5 XP"
+                    android:textAlignment="center"
+                    android:textColor="@android:color/black"
+                    android:textSize="12sp"
+                    app:layout_constraintEnd_toEndOf="@id/tv_sekolah_3"
+                    app:layout_constraintStart_toStartOf="@id/tv_sekolah_3"
+                    app:layout_constraintTop_toBottomOf="@id/tv_sekolah_3" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <include
+                layout="@layout/item_leaderboard"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/ly_1" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </ScrollView>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="24dp"
+        android:background="@drawable/bg_gradient_blue"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cv_1"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="27dp"
+        android:layout_marginEnd="25dp"
+        android:layout_marginBottom="40dp"
+        app:cardBackgroundColor="#FAB600"
+        app:cardCornerRadius="5dp"
+        app:cardElevation="5dp"
+        app:cardMaxElevation="5dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tv_number"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="24dp"
+                android:layout_marginBottom="24dp"
+                android:fontFamily="@font/poppins_bold"
+                android:text="-"
+                android:textColor="@color/pure_white"
+                android:textSize="10sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/iv_my"
+                android:layout_width="37dp"
+                android:layout_height="37dp"
+                android:layout_marginStart="15dp"
+                android:src="@drawable/avatar_astro"
+                app:layout_constraintBottom_toBottomOf="@id/tv_number"
+                app:layout_constraintStart_toEndOf="@id/tv_number"
+                app:layout_constraintTop_toTopOf="@id/tv_number" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tv_nama"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="19dp"
+                android:layout_marginTop="3dp"
+                android:fontFamily="@font/poppins_medium"
+                android:text="Sobat Pintar"
+                android:textColor="@color/pure_white"
+                android:textSize="12sp"
+                app:layout_constraintStart_toEndOf="@id/iv_my"
+                app:layout_constraintTop_toTopOf="@id/iv_my" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tv_sekolah"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/roboto"
+                android:text="SMK 60 Bekasi"
+                android:textColor="@color/pure_white"
+                android:textSize="10sp"
+                app:layout_constraintStart_toStartOf="@id/tv_nama"
+                app:layout_constraintTop_toBottomOf="@id/tv_nama" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="20dp"
+                android:fontFamily="@font/poppins_bold"
+                android:text="0 XP"
+                android:textColor="@color/pure_white"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

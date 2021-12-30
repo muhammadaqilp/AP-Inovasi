@@ -1,0 +1,286 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="350dp"
+    android:layout_height="wrap_content"
+    android:background="@drawable/frame_dialog"
+    android:gravity="center">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/bg_blue"
+            android:layout_width="0dp"
+            android:layout_height="131dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/bg_gradblue_15dp" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/iv_astrid"
+            android:layout_width="147dp"
+            android:layout_height="147dp"
+            android:layout_marginTop="10dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/ic_astrif" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/txt_hadiah"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="25dp"
+            android:layout_marginEnd="40dp"
+            android:fontFamily="@font/poppins_medium"
+            android:text="Sudah Check In Hari Ini?"
+            android:textColor="@color/pure_white"
+            android:textSize="14sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/iv_astrid"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="11dp"
+            android:layout_marginEnd="18dp"
+            android:fontFamily="@font/roboto"
+            android:text="Ayo gunakan aplikasi Aku Pintar setiap hari, absen dan dapatkan hadiahnya!"
+            android:textColor="@color/pure_white"
+            android:textSize="10sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@id/txt_hadiah"
+            app:layout_constraintTop_toBottomOf="@id/txt_hadiah" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/ly_1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/iv_astrid">
+
+            <ProgressBar
+                android:id="@+id/progress_bar"
+                style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+                android:layout_width="0dp"
+                android:layout_height="9dp"
+                android:layout_marginStart="39dp"
+                android:layout_marginTop="40dp"
+                android:layout_marginEnd="43dp"
+                android:max="100"
+                android:progressDrawable="@drawable/progress_drawable"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/tv_day_1"
+                android:layout_width="29dp"
+                android:layout_height="29dp"
+                app:layout_constraintBottom_toBottomOf="@id/progress_bar"
+                app:layout_constraintEnd_toStartOf="@id/progress_bar"
+                app:layout_constraintStart_toStartOf="@id/progress_bar"
+                app:layout_constraintTop_toTopOf="@id/progress_bar"
+                app:srcCompat="@drawable/ic_tutorial1" />
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:layout_width="65dp"
+                android:layout_height="50dp"
+                app:layout_constraintEnd_toEndOf="@id/tv_day_1"
+                app:layout_constraintStart_toStartOf="@id/tv_day_1"
+                app:layout_constraintTop_toBottomOf="@id/tv_day_1"
+                app:srcCompat="@drawable/ic_checkin_today" />
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/tv_day_2"
+                android:layout_width="29dp"
+                android:layout_height="29dp"
+                app:layout_constraintBottom_toBottomOf="@id/progress_bar"
+                app:layout_constraintEnd_toStartOf="@id/guideline"
+                app:layout_constraintStart_toStartOf="@id/guideline"
+                app:layout_constraintTop_toTopOf="@id/progress_bar"
+                app:srcCompat="@drawable/ic_tutorial2" />
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:layout_width="46dp"
+                android:layout_height="34dp"
+                android:layout_marginTop="10dp"
+                app:layout_constraintEnd_toEndOf="@id/tv_day_2"
+                app:layout_constraintStart_toStartOf="@id/tv_day_2"
+                app:layout_constraintTop_toBottomOf="@id/tv_day_2"
+                app:srcCompat="@drawable/ic_checkin_2" />
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/tv_day_3"
+                android:layout_width="29dp"
+                android:layout_height="29dp"
+                app:layout_constraintBottom_toBottomOf="@id/progress_bar"
+                app:layout_constraintEnd_toStartOf="@id/guideline1"
+                app:layout_constraintStart_toStartOf="@id/guideline1"
+                app:layout_constraintTop_toTopOf="@id/progress_bar"
+                app:srcCompat="@drawable/ic_tutorial3" />
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:layout_width="46dp"
+                android:layout_height="34dp"
+                android:layout_marginTop="10dp"
+                app:layout_constraintEnd_toEndOf="@id/tv_day_3"
+                app:layout_constraintStart_toStartOf="@id/tv_day_3"
+                app:layout_constraintTop_toBottomOf="@id/tv_day_3"
+                app:srcCompat="@drawable/ic_checkin_3" />
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/tv_day_4"
+                android:layout_width="29dp"
+                android:layout_height="29dp"
+                app:layout_constraintBottom_toBottomOf="@id/progress_bar"
+                app:layout_constraintEnd_toEndOf="@id/progress_bar"
+                app:layout_constraintStart_toEndOf="@id/progress_bar"
+                app:layout_constraintTop_toTopOf="@id/progress_bar"
+                app:srcCompat="@drawable/ic_tutorial4" />
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:layout_width="51dp"
+                android:layout_height="34dp"
+                android:layout_marginTop="10dp"
+                app:layout_constraintEnd_toEndOf="@id/tv_day_4"
+                app:layout_constraintStart_toStartOf="@id/tv_day_4"
+                app:layout_constraintTop_toBottomOf="@id/tv_day_4"
+                app:srcCompat="@drawable/ic_checkin_4" />
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/guideline"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintGuide_percent="0.35" />
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/guideline1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintGuide_percent="0.6" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/ly_2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="26dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/ly_1">
+
+            <ProgressBar
+                android:id="@+id/progress_bar2"
+                style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+                android:layout_width="0dp"
+                android:layout_height="9dp"
+                android:layout_marginStart="84dp"
+                android:layout_marginTop="40dp"
+                android:layout_marginEnd="82dp"
+                android:max="100"
+                android:progressDrawable="@drawable/progress_drawable"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/tv_day_5"
+                android:layout_width="29dp"
+                android:layout_height="29dp"
+                app:layout_constraintBottom_toBottomOf="@id/progress_bar2"
+                app:layout_constraintEnd_toStartOf="@id/progress_bar2"
+                app:layout_constraintStart_toStartOf="@id/progress_bar2"
+                app:layout_constraintTop_toTopOf="@id/progress_bar2"
+                app:srcCompat="@drawable/ic_tutorial5" />
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:layout_width="51dp"
+                android:layout_height="34dp"
+                android:layout_marginTop="10dp"
+                app:layout_constraintEnd_toEndOf="@id/tv_day_5"
+                app:layout_constraintStart_toStartOf="@id/tv_day_5"
+                app:layout_constraintTop_toBottomOf="@id/tv_day_5"
+                app:srcCompat="@drawable/ic_checkin_5" />
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/tv_day_6"
+                android:layout_width="29dp"
+                android:layout_height="29dp"
+                app:layout_constraintBottom_toBottomOf="@id/progress_bar2"
+                app:layout_constraintEnd_toStartOf="@id/guideline3"
+                app:layout_constraintStart_toStartOf="@id/guideline3"
+                app:layout_constraintTop_toTopOf="@id/progress_bar2"
+                app:srcCompat="@drawable/ic_tutorial6" />
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:layout_width="51dp"
+                android:layout_height="34dp"
+                android:layout_marginTop="10dp"
+                app:layout_constraintEnd_toEndOf="@id/tv_day_6"
+                app:layout_constraintStart_toStartOf="@id/tv_day_6"
+                app:layout_constraintTop_toBottomOf="@id/tv_day_6"
+                app:srcCompat="@drawable/ic_checkin_6" />
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/tv_day_7"
+                android:layout_width="29dp"
+                android:layout_height="29dp"
+                app:layout_constraintBottom_toBottomOf="@id/progress_bar2"
+                app:layout_constraintEnd_toEndOf="@id/progress_bar2"
+                app:layout_constraintStart_toEndOf="@id/progress_bar2"
+                app:layout_constraintTop_toTopOf="@id/progress_bar2"
+                app:srcCompat="@drawable/ic_tutorial7" />
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:layout_width="51dp"
+                android:layout_height="34dp"
+                android:layout_marginTop="10dp"
+                app:layout_constraintEnd_toEndOf="@id/tv_day_7"
+                app:layout_constraintStart_toStartOf="@id/tv_day_7"
+                app:layout_constraintTop_toBottomOf="@id/tv_day_7"
+                app:srcCompat="@drawable/ic_checkin_7" />
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/guideline3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintGuide_percent="0.5" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn_checkin"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="34dp"
+            android:layout_marginTop="38dp"
+            android:layout_marginEnd="36dp"
+            android:layout_marginBottom="28dp"
+            android:background="@drawable/bg_textview_blue"
+            android:fontFamily="@font/roboto_medium"
+            android:text="Ambil Hadiah Hari Ini"
+            android:textAllCaps="false"
+            android:textColor="@color/pure_white"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/ly_2" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

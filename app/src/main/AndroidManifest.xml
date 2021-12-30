@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.apinovasi">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.APInovasi">
+        <activity
+            android:name=".ui.akun.loyalty.SKLoyaltyActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.tantangan.mingguan.ChallengeMingguanActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.tantangan.checkin.SuccessCheckinActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.tantangan.harian.aplive.SuccessAPLiveActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.tantangan.harian.aplive.ChallengeAPLiveActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.tantangan.harian.ChallengeHarianActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.tantangan.leaderboard.LeaderboardActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.akun.loyalty.benefit.BenefitLoyaltyActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.akun.loyalty.LoyaltyActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.akun.coinpoin.topup.SuccessTopupActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.akun.coinpoin.topup.TopUpCoinActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.akun.coinpoin.rewards.RewardsSayaActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.akun.coinpoin.voucher.penukaran.SuccessVoucherActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.akun.coinpoin.voucher.penukaran.PenukaranVoucherActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.akun.coinpoin.SKCoinPoinActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.akun.coinpoin.voucher.VoucherSemuaActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.akun.coinpoin.aksespremium.AksesPremiumSemuaActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.akun.coinpoin.histori.CoinPoinHistoriActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.akun.coinpoin.CoinPoinActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.akun.referral.teman_diundang.TemanDiundangActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.akun.referral.syarat_ketentuan.SyaratKetentuanActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.akun.referral.tutorial.ReferralTutorialActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.akun.referral.ReferralActivity"
+            android:exported="false" />
+        <activity
+            android:name=".HomeActivity"
+            android:exported="true"
+            android:label="@string/app_name">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

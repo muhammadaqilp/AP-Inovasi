@@ -1,0 +1,285 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.akun.loyalty.benefit.BenefitLoyaltyActivity">
+
+    <ScrollView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:layout_width="0dp"
+                    android:layout_height="95dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@drawable/bg_gradient_blue" />
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/iv_back"
+                    android:layout_width="27dp"
+                    android:layout_height="30dp"
+                    android:layout_marginStart="21dp"
+                    android:layout_marginTop="49dp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@drawable/ic_back"
+                    app:tint="@color/pure_white" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:fontFamily="@font/poppins_semibold"
+                    android:text="Benefit AP Loyalty"
+                    android:textColor="@color/pure_white"
+                    android:textSize="16sp"
+                    app:layout_constraintBottom_toBottomOf="@id/iv_back"
+                    app:layout_constraintStart_toEndOf="@id/iv_back"
+                    app:layout_constraintTop_toTopOf="@id/iv_back" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/ly_1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="27dp"
+                android:layout_marginTop="29dp">
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/iv_badge"
+                    android:layout_width="28dp"
+                    android:layout_height="28dp"
+                    android:scaleType="centerCrop"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@drawable/ic_aployalty_siswabaru"
+                    app:tint="@color/dark_blue" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tv_rank"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:fontFamily="@font/poppins_semibold"
+                    android:text="Siswa Baru"
+                    android:textColor="@android:color/black"
+                    android:textSize="14sp"
+                    app:layout_constraintBottom_toTopOf="@id/tv_xp"
+                    app:layout_constraintStart_toEndOf="@id/iv_badge"
+                    app:layout_constraintTop_toTopOf="@id/iv_badge" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tv_xp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:fontFamily="@font/roboto"
+                    android:text="0 XP"
+                    android:textColor="@android:color/black"
+                    android:textSize="12sp"
+                    app:layout_constraintBottom_toBottomOf="@id/iv_badge"
+                    app:layout_constraintStart_toEndOf="@id/iv_badge"
+                    app:layout_constraintTop_toBottomOf="@id/tv_rank" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <include
+                android:id="@+id/item_benefit_1"
+                layout="@layout/item_benefit_siswabaru"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/ly_2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="27dp"
+                android:layout_marginTop="27dp">
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/iv_badge2"
+                    android:layout_width="27dp"
+                    android:layout_height="11dp"
+                    android:scaleType="centerCrop"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@drawable/ic_loyalty_bintang"
+                    app:tint="@color/dark_blue" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tv_rank2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:fontFamily="@font/poppins_semibold"
+                    android:text="Bintang Kelas"
+                    android:textColor="@android:color/black"
+                    android:textSize="14sp"
+                    app:layout_constraintBottom_toTopOf="@id/tv_xp2"
+                    app:layout_constraintStart_toEndOf="@id/iv_badge2"
+                    app:layout_constraintTop_toTopOf="@id/iv_badge2" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tv_xp2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:fontFamily="@font/roboto"
+                    android:text="600 XP"
+                    android:textColor="@android:color/black"
+                    android:textSize="12sp"
+                    app:layout_constraintBottom_toBottomOf="@id/iv_badge2"
+                    app:layout_constraintStart_toEndOf="@id/iv_badge2"
+                    app:layout_constraintTop_toBottomOf="@id/tv_rank2" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rv_bintang"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:nestedScrollingEnabled="false"
+                tools:itemCount="5"
+                tools:listitem="@layout/item_benefit_siswabaru" />
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/ly_3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="27dp"
+                android:layout_marginTop="27dp">
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/iv_badge3"
+                    android:layout_width="18dp"
+                    android:layout_height="26dp"
+                    android:scaleType="centerCrop"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@drawable/ic_loyalty_berprestasi"
+                    app:tint="@color/dark_blue" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tv_rank3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:fontFamily="@font/poppins_semibold"
+                    android:text="Siswa Berprestasi"
+                    android:textColor="@android:color/black"
+                    android:textSize="14sp"
+                    app:layout_constraintBottom_toTopOf="@id/tv_xp3"
+                    app:layout_constraintStart_toEndOf="@id/iv_badge3"
+                    app:layout_constraintTop_toTopOf="@id/iv_badge3" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tv_xp3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:fontFamily="@font/roboto"
+                    android:text="1500 XP"
+                    android:textColor="@android:color/black"
+                    android:textSize="12sp"
+                    app:layout_constraintBottom_toBottomOf="@id/iv_badge3"
+                    app:layout_constraintStart_toEndOf="@id/iv_badge3"
+                    app:layout_constraintTop_toBottomOf="@id/tv_rank3" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rv_berprestasi"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:nestedScrollingEnabled="false"
+                tools:itemCount="5"
+                tools:listitem="@layout/item_benefit_siswabaru" />
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/ly_4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="27dp"
+                android:layout_marginTop="27dp">
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/iv_badge4"
+                    android:layout_width="27dp"
+                    android:layout_height="27dp"
+                    android:scaleType="centerCrop"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@drawable/ic_loyalty_juara"
+                    app:tint="@color/dark_blue" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tv_rank4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:fontFamily="@font/poppins_semibold"
+                    android:text="Juara Umum"
+                    android:textColor="@android:color/black"
+                    android:textSize="14sp"
+                    app:layout_constraintBottom_toTopOf="@id/tv_xp4"
+                    app:layout_constraintStart_toEndOf="@id/iv_badge4"
+                    app:layout_constraintTop_toTopOf="@id/iv_badge4" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tv_xp4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:fontFamily="@font/roboto"
+                    android:text="4000 XP"
+                    android:textColor="@android:color/black"
+                    android:textSize="12sp"
+                    app:layout_constraintBottom_toBottomOf="@id/iv_badge4"
+                    app:layout_constraintStart_toEndOf="@id/iv_badge4"
+                    app:layout_constraintTop_toBottomOf="@id/tv_rank4" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rv_juara"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="45dp"
+                android:nestedScrollingEnabled="false"
+                tools:itemCount="5"
+                tools:listitem="@layout/item_benefit_siswabaru" />
+        </LinearLayout>
+
+    </ScrollView>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="24dp"
+        android:background="@drawable/bg_gradient_blue"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

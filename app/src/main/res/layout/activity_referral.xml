@@ -1,0 +1,257 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_gradient_blue"
+    tools:context=".ui.akun.referral.ReferralActivity">
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/iv_back"
+        android:layout_width="27dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="21dp"
+        android:layout_marginTop="49dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_back"
+        app:tint="@color/pure_white" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:fontFamily="@font/poppins_semibold"
+        android:text="@string/ap_referral_code"
+        android:textColor="@color/pure_white"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="@id/iv_back"
+        app:layout_constraintStart_toEndOf="@id/iv_back"
+        app:layout_constraintTop_toTopOf="@id/iv_back" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tv_sk"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="26dp"
+        android:fontFamily="@font/poppins"
+        android:text="@string/txt_syarat_ketentuan"
+        android:textColor="@color/pure_white"
+        android:textSize="10sp"
+        app:layout_constraintBottom_toBottomOf="@id/iv_back"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/iv_back"
+        tools:ignore="SmallSp" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/iv_icon_referral"
+        android:layout_width="270dp"
+        android:layout_height="140dp"
+        android:layout_marginTop="39dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/iv_back"
+        app:srcCompat="@drawable/ic_referral" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tv_referral_ajak"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="26dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="26dp"
+        android:fontFamily="@font/poppins_semibold"
+        android:text="@string/txt_ajak_teman"
+        android:textAlignment="center"
+        android:textColor="@color/pure_white"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/iv_icon_referral" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tv_referral_senang"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="26dp"
+        android:layout_marginTop="14dp"
+        android:layout_marginEnd="26dp"
+        android:fontFamily="@font/roboto_regular"
+        android:text="@string/txt_senang_referral"
+        android:textAlignment="center"
+        android:textColor="@color/pure_white"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toTopOf="@id/tv_referral_code"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_referral_ajak" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tv_referral_code"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="26dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="26dp"
+        android:background="@drawable/bg_textview_radius"
+        android:paddingStart="21dp"
+        android:paddingTop="15dp"
+        android:paddingBottom="15dp"
+        android:text="@string/txt_referral_code"
+        android:textColor="@color/dark_grey"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@id/iv_share"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_referral_senang"
+        tools:ignore="RtlSymmetry" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/iv_salin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="15dp"
+        app:layout_constraintBottom_toBottomOf="@id/tv_referral_code"
+        app:layout_constraintEnd_toEndOf="@id/tv_referral_code"
+        app:layout_constraintTop_toTopOf="@id/tv_referral_code"
+        app:srcCompat="@drawable/ic_salin_referral" />
+
+    <LinearLayout
+        android:id="@+id/iv_share"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="26dp"
+        android:layout_marginTop="14dp"
+        android:layout_marginEnd="26dp"
+        android:background="@drawable/bg_textview_radius"
+        android:gravity="center_horizontal"
+        app:layout_constraintBottom_toTopOf="@id/tv_tutorial_referral"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_referral_code">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            app:srcCompat="@drawable/ic_share" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="7dp"
+            android:drawablePadding="7dp"
+            android:fontFamily="@font/roboto_medium"
+            android:paddingTop="15dp"
+            android:paddingBottom="15dp"
+            android:text="@string/bagikan_referral"
+            android:textColor="@color/dark_blue"
+            android:textSize="14sp" />
+    </LinearLayout>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tv_tutorial_referral"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="9dp"
+        android:fontFamily="@font/poppins"
+        android:text="@string/txt_tutorial_referral_u"
+        android:textColor="@color/pure_white"
+        android:textSize="10sp"
+        app:layout_constraintBottom_toTopOf="@id/tv_referral_teman1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/iv_share"
+        tools:ignore="SmallSp" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/tv_referral_teman1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="23dp"
+        android:layout_marginTop="14dp"
+        android:layout_marginEnd="23dp"
+        android:layout_marginBottom="27dp"
+        android:background="@drawable/bg_textview_yellow"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_tutorial_referral">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/txt_teman_diundang"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="11dp"
+            android:fontFamily="@font/roboto_regular"
+            android:text="@string/txt_teman_diundang"
+            android:textColor="@color/pure_white"
+            android:textSize="10sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:ignore="SmallSp" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tv_referral_teman"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="11dp"
+            android:fontFamily="@font/poppins_bold"
+            android:text="@string/txt_jumlahteman_referral"
+            android:textColor="@color/pure_white"
+            android:textSize="16sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="@id/txt_teman_diundang"
+            app:layout_constraintTop_toBottomOf="@id/txt_teman_diundang" />
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="11dp"
+            android:gravity="center"
+            android:orientation="vertical"
+            app:layout_constraintBottom_toBottomOf="@id/iv_arrow"
+            app:layout_constraintEnd_toStartOf="@id/iv_arrow"
+            app:layout_constraintTop_toTopOf="@id/iv_arrow">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/hotlist_bell"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/ic_jumlah_teman"
+                app:civ_circle_background_color="@color/pure_white" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/badge_textView"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_alignTop="@id/hotlist_bell"
+                android:layout_alignEnd="@id/hotlist_bell"
+                android:background="@drawable/bg_round_notif"
+                android:gravity="center"
+                android:paddingStart="2dp"
+                android:paddingLeft="2dp"
+                android:paddingEnd="2dp"
+                android:paddingRight="2dp"
+                android:text="@string/num_ten"
+                android:textColor="#FFF"
+                android:textSize="8sp"
+                tools:ignore="SmallSp" />
+
+        </RelativeLayout>
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/iv_arrow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="18dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/ic_arrow" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

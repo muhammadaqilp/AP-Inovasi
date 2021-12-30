@@ -1,0 +1,59 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Theme.APInovasi" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
+        <item name="android:windowLightStatusBar" tools:targetApi="m">true</item>
+        <item name="windowNoTitle">true</item>
+        <item name="windowActionBar">false</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@android:color/transparent</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:windowSoftInputMode">adjustPan</item>
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryVariant</item>
+        <!-- Customize your theme here. -->
+    </style>
+
+    <style name="AppBottomSheetDialogTheme" parent="Theme.Design.Light.BottomSheetDialog">
+        <item name="bottomSheetStyle">@style/AppModalStyle</item>
+    </style>
+
+    <style name="AppModalStyle" parent="Widget.Design.BottomSheet.Modal">
+        <item name="android:background">@drawable/bg_rounded_dialog</item>
+    </style>
+
+    <style name="BottomNavigationView" parent="@style/TextAppearance.AppCompat.Caption">
+        <item name="android:textSize">10sp</item>
+        <item name="fontFamily">@font/poppins</item>
+    </style>
+
+    <style name="BottomNavigationView.Inactive" parent="@style/TextAppearance.AppCompat.Caption">
+        <item name="android:textSize">10sp</item>
+        <item name="fontFamily">@font/poppins</item>
+        <item name="android:textColor">#979797</item>
+    </style>
+
+    <style name="TabLayoutCustomText" parent="TextAppearance.Design.Tab">
+        <item name="textAllCaps">false</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="fontFamily">@font/roboto_medium</item>
+        <item name="android:textSize">14sp</item>
+    </style>
+
+    <style name="ChipFilter" parent="Widget.MaterialComponents.Chip.Choice">
+        <item name="android:textAppearance">@style/ChipText</item>
+        <item name="android:textColor">@color/dark_grey</item>
+        <item name="chipStrokeWidth">0.25dp</item>
+        <item name="chipCornerRadius">5dp</item>
+        <item name="chipStrokeColor">@color/silver_grey</item>
+        <item name="android:elevation">4dp</item>
+    </style>
+
+    <style name="ChipText">
+        <item name="android:textSize">10sp</item>
+        <item name="android:fontFamily">@font/roboto_regular</item>
+        <item name="android:textStyle">normal</item>
+        <item name="textStartPadding">50dp</item>
+        <item name="textEndPadding">50dp</item>
+    </style>
+</resources>

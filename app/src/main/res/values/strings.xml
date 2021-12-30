@@ -1,0 +1,131 @@
+<resources>
+    <string name="app_name">AP Inovasi</string>
+    <string name="txt_syarat_ketentuan"><u>Syarat dan Ketentuan</u></string>
+    <string name="txt_syarat_ketentuan2">Syarat dan Ketentuan</string>
+    <string name="txt_tutorial_referral_u"><u>Tutorial Ajak Teman</u></string>
+    <string name="txt_tutorial_referral">Tutorial Ajak Teman</string>
+    <string name="ap_referral_code">Ajak Teman</string>
+    <string name="txt_ajak_teman">Ajak teman kamu untuk belajar bersama di Aku Pintar</string>
+    <string name="txt_senang_referral">Senang belajar menggunakan Aku Pintar? Mari ajak temanmu untuk mengetahui minat dan bakatnya serta belajar bersama menggunakan Aku Pintar</string>
+    <string name="txt_referral_code">OCT23981</string>
+    <string name="bagikan_referral">Bagikan Kode Referralmu</string>
+    <string name="txt_ajak_referral">Ajak Temanmu Gabung Dengan Kode Referralmu!</string>
+    <string name="txt_jumlahteman_referral">3 Teman</string>
+    <string name="txt_teman_diundang">Teman yang diundang</string>
+    <string name="num_ten">3</string>
+    <string name="txt_share">Ajak Teman Melalui</string>
+    <string name="num_1">1</string>
+    <string name="txt_dummy_name1">Elaine Budi</string>
+    <string name="txt_dummy_tgl1">9 Desember 2021</string>
+    <string name="txt_dummy_name2">Raihan Pratama</string>
+    <string name="txt_dummy_name3">Rahma Bintang</string>
+    <string name="txt_dummy_tgl2">11 Desember 2021</string>
+    <string name="txt_dummy_tgl3">13 Desember 2021</string>
+    <string name="txt_num_2">2</string>
+    <string name="txt_num_3">3</string>
+    <string name="txt_num_4">4</string>
+    <string name="txt_num_8">8</string>
+    <string name="txt_plus">+</string>
+    <string name="txt_num_100">100</string>
+    <string name="txt_num_200">200</string>
+    <string name="txt_num_300">300</string>
+    <string name="txt_ajakteman_banyak">Ajak Teman Lebih Banyak</string>
+    <string name="title_beranda">Beranda</string>
+    <string name="title_kalender">Kalender</string>
+    <string name="title_diskusi">Diskusi</string>
+    <string name="title_tantangan">Tantangan</string>
+    <string name="title_akun">Akun</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="txt_edit_profil">Edit Profil</string>
+    <string name="txt_dummy_name">Sobat Pintar</string>
+    <string name="txt_dummy_sekolah">SMAN 5 BANDUNG</string>
+    <string name="txt_dummy_email">mrasyid221@gmail.com</string>
+    <string name="txt_siswa_baru">Siswa Baru</string>
+    <string name="ap_coin">AP Coin</string>
+    <string name="ap_poin">AP Poin</string>
+    <string name="txt_dummy_tgl4">Selasa, 14 Desember 2021</string>
+    <string name="akses_premium">Akses Premium</string>
+    <string name="voucher_pintar">Voucher Pintar</string>
+    <string name="lorem_ipsum">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</string>
+    <string name="txt_metode_penukaran">Metode Penukaran</string>
+    <string name="txt_saldo">Saldo</string>
+    <string name="txt_cek_rewards">Cek ‘<b>Rewards Saya</b>’ untuk melihat semua rewards kamu</string>
+    <string name="confirmation_topup"><![CDATA[Kamu akan melakukan Top Up sebanyak <b>%1s</b> dengang metode pembayaran melalui <b>%2s</b>.]]></string>
+    <string name="topup_nominal_1">1000 AP Coin (Rp10.000)</string>
+    <string name="topup_nominal_2">2500 AP Coin (Rp25.000)</string>
+    <string name="topup_nominal_3">5000 AP Coin (Rp50.000)</string>
+    <string name="topup_nominal_4">10000 AP Coin (Rp100.000)</string>
+    <string name="txt_semangat_xp">Semangat kumpulin <b>164 XP</b> lagi untuk naik level jadi\nBintang Kelas, Sobat Pintar</string>
+    <string name="txt_berhasil_live">Kamu berhasil menyelesaikan Challenge Harian\n<b>“Tonton AP Live”</b></string>
+    <string name="txt_berhasil_mingguan">Kamu berhasil menyelesaikan Challenge Mingguan</string>
+    <string name="txt_tantangan_selesai">%s tantangan berhasil diselesaikan</string>
+    <string name="txt_share_referral">Butuh soal tryout gratis? Tes minat pintar yang kredible? Atau bingung milih sekolah/kampus masa depan?  Semua tersedia di aplikasi Aku Pintar loh. Masukkan kode: %1s untuk dapatkan benefitnya atau melalui link: https://referral.akupintar.id/%2s</string>
+    <string name="txt_kesempatan_clue">Kamu memiliki <b>3 kesempatan</b> lagi untuk mendapatkan clue pada Challenge Minggu ini</string>
+    <string name="txt_timer">%d detik</string>
+    <string name="txt_jumlah_soal">%1d dari %2d soal</string>
+    <string name="txt_waktu_habis">Waktu Habis!</string>
+    <string name="txt_progress">%s tantangan berhasil diselesaikan</string>
+    <string name="txt_selesaikan_challenge">Selesaikan Challenge Lainnya</string>
+    <string name="txt_tutup">Tutup</string>
+    <string name="txt_sk_voucher"><![CDATA[
+        <ol>
+        <li>Redeem voucher hanya bisa dilakukan di aplikasi Aku Pintar.</li>
+        <li>Voucher hanya bisa dilakukan dalam satu kali transaksi.</li>
+        <li>Voucher bisa digunakan baik transaksi langsung atau online.</li>
+        <li>Voucher berlaku hingga 30 hari dari masa pertama klaim.</li>
+        <li>Voucher tidak dapat digabungkan dengan voucher lainnya.</li>
+        <li>Voucher tidak dapat diuangkan.</li>
+        <li>Voucher bisa dibatalkan sewaktu-waktu bila ditemukan kecurangan atau penyalahgunaan yang dapat merugikan Aku Pintar, mitra, dan pihak-pihak lainnya.</li>
+        <li>Syarat dan Ketentuan dapat berubah sewaktu-waktu, kamu bisa cek secara berkala.</li>
+        <li>Ketersediaan voucher terbatas.</li>
+        </ol>
+        ]]>
+    </string>
+    <string name="txt_penggunaan_voucher"><![CDATA[
+        <ol>
+        <li>Pilih voucher yang kamu inginkan.</li>
+        <li>Baca Syarat dan Ketentuan terlebih dahulu.</li>
+        <li>Tukarkan voucher tersebut dengan AP Poin atau AP Coin sesuai dengan ketentuan.</li>
+        <li>Voucher yang sudah ditukar bisa Sobat Pintar lihat di menu “Voucher Saya”.</li>
+        <li>Voucher sudah siap digunakan deh.</li>
+        </ol>
+        ]]>
+    </string>
+    <string name="txt_aplive_penyelesaian"><![CDATA[
+        <ol>
+        <li>Buka aplikasi Aku Pintar</li>
+        <li>Geser ke bawah untuk menemukan fitur AP Live</li>
+        <li>Cek jadwal AP Live yang tersedia</li>
+        <li>Tonton hingga akhir</li>
+        <li>Ulangi untuk video kedua</li>
+        <li>XP akan otomatis ditambahkan ke akunmu</li>
+        <li>Kamu juga bisa akses AP Live melalui tombol sebelah kanan di bawah tulisan ini loh Sobat</li>
+        </ol>
+        ]]>
+    </string>
+    <string name="txt_ketentuankhusus_loyalty"><![CDATA[
+        <ol>
+        <li>Buka aplikasi Aku Pintar</li>
+        <li>Kamu bisa geser ke bawah, atas, kanan, dan kiri untuk menemukan fitur-fitur yang tersedia gratis</li>
+        <li>Selamat mencoba semua fiturnya, Sobat</li>
+        <li>Eh, jangan lupa untuk ajak temanmu menggunakan Aku Pintar juga ya!</li>
+        </ol>
+        ]]>
+    </string>
+    <string name="txt_desc_voucher">Kamu bisa mendapatkan potongan harga Rp10.000 untuk semua jenis pembelian di Gramedia dengan menukarkan 1.000 AP Poin atau AP Coin.</string>
+    <string name="txt_aplive_penjelasan">Untuk mendapatkan XP tambahan, kamu harus menonton 2 video AP Live. Sobat Pintar diharapkan untuk menontonnya hingga akhir video.</string>
+    <string name="txt_loyalty_penjelasan">Kamu bisa jelajahi aplikasi Aku Pintar sepuas-puasnya loh, Sobat. Banyak fitur gratis yang menunggu untuk kamu cobain nih.</string>
+    <!--    <string name="text_syaratketentuan">-->
+    <!--        <![CDATA[<ol>-->
+    <!--    <li>Program &ldquo;Ajak Teman&rdquo; berlaku untuk seluruh pengguna Aku Pintar.</li>-->
+    <!--    <li id="isPasted">Kode referralmu hanya bisa digunakan maksimal oleh 10 teman.</li>-->
+    <!--    <li id="isPasted">Setiap satu teman yang menggunakan kode referralmu kamu akan mendapatkan 2 XP dan 100 poin. Berlaku kelipatan 2 untuk jumlah XP dan kelipatan 100 untuk jumlah poin.</li>-->
+    <!--    <li id="isPasted">Kamu akan mendapatkan maksimal 184 XP dan 5500 poin, dengan ketentuan:<ol style="list-style-type: lower-alpha;">-->
+    <!--            <li>XP berlaku selamanya yang bisa digunakan untuk fitur AP Loyalty guna mendapatkan benefit yang lebih besar;</li>-->
+    <!--            <li>Poin bisa ditukarkan dalam bentuk Coin atau benefit lainnya, dan akan hangus dalam waktu enam bulan dihitung dari tanggal pertama klaim.&nbsp;</li>-->
+    <!--        </ol>-->
+    <!--    </li>-->
+    <!--    <li>Apabila kami menemukan segala bentuk kecurangan dan penyalahgunaan yang dapat merugikan Aku Pintar dan pihak-pihak lainnya. Tim Aku Pintar berhak untuk mendiskualifikasi atau tidak mengikutsertakan kamu lebih lanjut pada progrom &ldquo;Ajak Teman&rdquo; dan program Aku Pintar lainnya tanpa perlu memberikan pemberitahuan dan penjelasan lebih lanjut.</li>-->
+    <!--    <li>Tim Aku Pintar dapat sewaktu-waktu melakukan perubahan Syarat &amp; Ketentuan Program &ldquo;Ajak Teman&rdquo;. Disarankan untuk melihat dan membacanya secara berkala. Penggunaan fitur &ldquo;Ajak Teman&rdquo; berarti kamu sudah menyetujui dan memahami syarat dan ketentuan yang berlaku.</li></ol>]]>-->
+    <!--    </string>-->
+</resources>

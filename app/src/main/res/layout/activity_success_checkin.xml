@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_gradient_blue"
+    android:orientation="vertical"
+    tools:context=".ui.tantangan.checkin.SuccessCheckinActivity">
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/iv_exit"
+        android:layout_width="16dp"
+        android:layout_height="16dp"
+        android:layout_gravity="end"
+        android:layout_marginTop="49dp"
+        android:layout_marginEnd="33dp"
+        app:srcCompat="@drawable/ic_exit"
+        app:tint="@color/pure_white" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="42dp"
+        android:layout_marginTop="155dp"
+        android:layout_marginEnd="42dp"
+        android:fontFamily="@font/poppins_semibold"
+        android:text="Selamat! Kamu mendapatkan"
+        android:textAlignment="center"
+        android:textColor="@color/pure_white"
+        android:textSize="18sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:layout_width="112dp"
+            android:layout_height="110dp"
+            app:srcCompat="@drawable/ic_xp_glowing" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:layout_width="86dp"
+            android:layout_height="103dp"
+            android:layout_marginStart="44dp"
+            android:layout_marginTop="16dp"
+            app:srcCompat="@drawable/ic_poin_glowing" />
+
+    </LinearLayout>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="42dp"
+        android:layout_marginTop="47dp"
+        android:layout_marginEnd="42dp"
+        android:text="5 XP &amp; 10 AP Poin"
+        android:textAlignment="center"
+        android:textColor="#FFA000"
+        android:textSize="22sp"
+        app:fontFamily="@font/poppins_semibold" />
+
+</LinearLayout>

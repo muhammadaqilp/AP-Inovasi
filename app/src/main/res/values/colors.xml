@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#FF0070BA</color>
+    <color name="colorPrimaryDark">#FFFFFF</color>
+    <color name="colorAccent">#f1a300</color>
+
+    <!--black and white-->
+    <color name="pure_white">#ffffff</color>
+    <color name="translucent_white">#88ffffff</color>
+    <color name="transparent">#00000000</color>
+
+    <!--semi white-->
+
+    <!--grey-->
+    <color name="dark_grey">#424a4c</color>
+    <color name="light_grey">#f9f9f9</color>
+    <color name="silver_grey">#888f95</color>
+
+    <!--red-->
+    <color name="red">#d11919</color>
+    <color name="red_velvet">#f96464</color>
+
+    <!--yellow-->
+    <color name="bright_yellow">#ffb100</color>
+
+    <!--green-->
+    <color name="fresh_green">#4ee291</color>
+
+    <!--blue-->
+    <color name="dark_blue">#0070ba</color>
+
+    <!--app-->
+
+
+    <color name="filter_unselected">#797979</color>
+    <color name="txt_btn_incative">#969696</color>
+    <color name="bg_btn_incative">#F1F1F1</color>
+</resources>

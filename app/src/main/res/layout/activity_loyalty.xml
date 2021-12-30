@@ -1,0 +1,421 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.akun.loyalty.LoyaltyActivity">
+
+    <ScrollView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                app:layout_constraintBottom_toBottomOf="@id/tv_xp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/bg_gradient_blue" />
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/iv_back"
+                android:layout_width="27dp"
+                android:layout_height="30dp"
+                android:layout_marginStart="21dp"
+                android:layout_marginTop="49dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/ic_back"
+                app:tint="@color/pure_white" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:fontFamily="@font/poppins_semibold"
+                android:text="AP Loyalty"
+                android:textColor="@color/pure_white"
+                android:textSize="16sp"
+                app:layout_constraintBottom_toBottomOf="@id/iv_back"
+                app:layout_constraintStart_toEndOf="@id/iv_back"
+                app:layout_constraintTop_toTopOf="@id/iv_back" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tv_sk"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="26dp"
+                android:fontFamily="@font/poppins"
+                android:text="@string/txt_syarat_ketentuan"
+                android:textColor="@color/pure_white"
+                android:textSize="10sp"
+                app:layout_constraintBottom_toBottomOf="@id/iv_back"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@id/iv_back"
+                tools:ignore="SmallSp" />
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/iv_nametag"
+                android:layout_width="0dp"
+                android:layout_height="231dp"
+                android:layout_marginStart="28dp"
+                android:layout_marginEnd="31dp"
+                android:scaleType="fitCenter"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/iv_back"
+                app:srcCompat="@drawable/ic_nametag" />
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/ly_1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginEnd="20dp"
+                android:paddingBottom="20dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/iv_nametag">
+
+                <ProgressBar
+                    android:id="@+id/progress_bar"
+                    style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+                    android:layout_width="0dp"
+                    android:layout_height="9dp"
+                    android:layout_marginTop="10dp"
+                    android:max="100"
+                    android:progressDrawable="@drawable/progress_drawable"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/iv_2"
+                    android:layout_width="19dp"
+                    android:layout_height="19dp"
+                    app:civ_circle_background_color="#D8D8D8"
+                    android:src="@drawable/ic_loyalty_bintang"
+                    app:layout_constraintBottom_toBottomOf="@id/progress_bar"
+                    app:layout_constraintEnd_toEndOf="@id/guideline"
+                    app:layout_constraintStart_toStartOf="@id/guideline"
+                    app:layout_constraintTop_toTopOf="@id/progress_bar" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="9dp"
+                    android:orientation="vertical"
+                    app:layout_constraintEnd_toEndOf="@id/iv_2"
+                    app:layout_constraintStart_toStartOf="@id/iv_2"
+                    app:layout_constraintTop_toBottomOf="@id/iv_2">
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:layout_width="50dp"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/poppins_medium"
+                        android:text="Bintang Kelas"
+                        android:textAlignment="center"
+                        android:textColor="@color/pure_white"
+                        android:textSize="10sp" />
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:fontFamily="@font/roboto"
+                        android:text="600 XP"
+                        android:textColor="@color/pure_white"
+                        android:textSize="8sp" />
+
+                </LinearLayout>
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/iv_3"
+                    android:layout_width="19dp"
+                    android:layout_height="19dp"
+                    app:civ_circle_background_color="#D8D8D8"
+                    android:src="@drawable/ic_loyalty_berprestasi"
+                    app:layout_constraintBottom_toBottomOf="@id/progress_bar"
+                    app:layout_constraintEnd_toEndOf="@id/guideline1"
+                    app:layout_constraintStart_toStartOf="@id/guideline1"
+                    app:layout_constraintTop_toTopOf="@id/progress_bar" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="9dp"
+                    android:orientation="vertical"
+                    app:layout_constraintEnd_toEndOf="@id/iv_3"
+                    app:layout_constraintStart_toStartOf="@id/iv_3"
+                    app:layout_constraintTop_toBottomOf="@id/iv_3">
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:layout_width="60dp"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/poppins_medium"
+                        android:text="Siswa Berprestasi"
+                        android:textAlignment="center"
+                        android:textColor="@color/pure_white"
+                        android:textSize="10sp" />
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:fontFamily="@font/roboto"
+                        android:text="1500 XP"
+                        android:textColor="@color/pure_white"
+                        android:textSize="8sp" />
+
+                </LinearLayout>
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/iv_4"
+                    android:layout_width="19dp"
+                    android:layout_height="19dp"
+                    app:civ_circle_background_color="#D8D8D8"
+                    android:src="@drawable/ic_loyalty_juara"
+                    app:layout_constraintBottom_toBottomOf="@id/progress_bar"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="@id/progress_bar" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="9dp"
+                    android:orientation="vertical"
+                    app:layout_constraintEnd_toEndOf="@id/iv_4"
+                    app:layout_constraintTop_toBottomOf="@id/iv_4">
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:layout_width="50dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="right"
+                        android:fontFamily="@font/poppins_medium"
+                        android:gravity="right"
+                        android:text="Juara Umum"
+                        android:textColor="@color/pure_white"
+                        android:textSize="10sp" />
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="right"
+                        android:fontFamily="@font/roboto"
+                        android:text="4500 XP"
+                        android:textColor="@color/pure_white"
+                        android:textSize="8sp" />
+
+                </LinearLayout>
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/iv_1"
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    app:civ_circle_background_color="#FFB200"
+                    android:src="@drawable/ic_aployalty_siswabaru"
+                    app:layout_constraintBottom_toBottomOf="@id/progress_bar"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="@id/progress_bar" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="9dp"
+                    android:orientation="vertical"
+                    app:layout_constraintStart_toStartOf="@id/iv_1"
+                    app:layout_constraintTop_toBottomOf="@id/iv_1">
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/tv_1"
+                        android:layout_width="40dp"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/poppins_semibold"
+                        android:text="Siswa Baru"
+                        android:textColor="@color/pure_white"
+                        android:textSize="10sp" />
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/roboto"
+                        android:text="0 XP"
+                        android:textColor="@color/pure_white"
+                        android:textSize="8sp" />
+
+                </LinearLayout>
+
+                <androidx.constraintlayout.widget.Guideline
+                    android:id="@+id/guideline"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    app:layout_constraintGuide_percent="0.35" />
+
+                <androidx.constraintlayout.widget.Guideline
+                    android:id="@+id/guideline1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    app:layout_constraintGuide_percent="0.65" />
+
+                <androidx.constraintlayout.widget.Guideline
+                    android:id="@+id/guideline3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    app:layout_constraintGuide_percent="0.0" />
+
+                <androidx.constraintlayout.widget.Guideline
+                    android:id="@+id/guideline4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    app:layout_constraintGuide_percent="0.99" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tv_xp"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="50dp"
+                android:layout_marginEnd="47dp"
+                android:fontFamily="@font/poppins"
+                android:paddingBottom="20dp"
+                android:text="@string/txt_semangat_xp"
+                android:textAlignment="center"
+                android:textColor="@color/pure_white"
+                android:textSize="10sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/ly_1" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/txt_benefit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="25dp"
+                android:layout_marginTop="19dp"
+                android:fontFamily="@font/poppins_semibold"
+                android:text="Benefit"
+                android:textColor="@android:color/black"
+                android:textSize="14sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tv_xp" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tv_benefit_semua"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="25dp"
+                android:fontFamily="@font/roboto"
+                android:text="Lihat Semua"
+                android:textColor="#076BB6"
+                android:textSize="12sp"
+                app:layout_constraintBottom_toBottomOf="@id/txt_benefit"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@id/txt_benefit" />
+
+            <include
+                android:id="@+id/item_benefit_1"
+                layout="@layout/item_benefit_siswabaru"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/txt_benefit" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/txt_xp_poin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="25dp"
+                android:layout_marginTop="19dp"
+                android:fontFamily="@font/poppins_semibold"
+                android:text="Dapatkan XP dan AP Poin"
+                android:textColor="@android:color/black"
+                android:textSize="14sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/item_benefit_1" />
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/layout_xp"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="25dp"
+                android:layout_marginTop="17dp"
+                android:layout_marginEnd="25dp"
+                android:layout_marginBottom="29dp"
+                android:background="@drawable/bg_gradblue_6dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/txt_xp_poin">
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/iv_icon_xp"
+                    android:layout_width="71dp"
+                    android:layout_height="80dp"
+                    android:layout_marginStart="26dp"
+                    android:layout_marginTop="14dp"
+                    android:layout_marginBottom="13dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@drawable/ic_astrid" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/txt_halo"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="30dp"
+                    android:layout_marginTop="20dp"
+                    android:fontFamily="@font/poppins"
+                    android:text="Halo, Sobat Pintar"
+                    android:textColor="@color/pure_white"
+                    android:textSize="8sp"
+                    app:layout_constraintBottom_toTopOf="@id/txt_halo_2"
+                    app:layout_constraintStart_toEndOf="@id/iv_icon_xp"
+                    app:layout_constraintTop_toTopOf="@id/iv_icon_xp" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/txt_halo_2"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="20dp"
+                    android:fontFamily="@font/poppins_medium"
+                    android:text="Yuk ikutan keseruan Challange dan raih hingga ribuan AP Poin!"
+                    android:textColor="@color/pure_white"
+                    android:textSize="10sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="@id/txt_halo"
+                    app:layout_constraintTop_toBottomOf="@id/txt_halo" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </ScrollView>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="24dp"
+        android:background="@drawable/bg_gradient_blue"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

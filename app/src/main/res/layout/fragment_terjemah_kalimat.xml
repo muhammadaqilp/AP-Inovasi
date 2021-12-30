@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.tantangan.mingguan.games.terjemah.TerjemahKalimatFragment">
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/txt_tebak"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="26dp"
+        android:layout_marginTop="23dp"
+        android:fontFamily="@font/poppins_semibold"
+        android:text="Terjemah Kalimat"
+        android:textColor="@android:color/black"
+        android:textSize="14sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/btn_clue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="28dp"
+        android:background="@drawable/bg_textview_blue"
+        android:drawableStart="@drawable/ic_clue"
+        android:drawablePadding="8dp"
+        android:fontFamily="@font/poppins_medium"
+        android:paddingStart="12dp"
+        android:paddingTop="9dp"
+        android:paddingEnd="8dp"
+        android:paddingBottom="8dp"
+        android:text="Clue"
+        android:textColor="@color/pure_white"
+        android:textSize="10sp"
+        app:layout_constraintBottom_toBottomOf="@id/txt_tebak"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/txt_tebak" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/txt_rule"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="28dp"
+        android:fontFamily="@font/roboto_regular"
+        android:text="Terjemahkan kalimat di bawah ini ke dalam Bahasa Inggris dengan menggunakan kata yang ada"
+        android:textColor="@android:color/black"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/btn_clue" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/iv_tebak"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="26dp"
+        android:layout_marginTop="38dp"
+        android:layout_marginEnd="26dp"
+        android:fontFamily="@font/poppins_medium"
+        android:text="Aljabar dapat menjadi cara berpikir yang berguna tentang berbagai hal"
+        android:textAlignment="center"
+        android:textColor="@color/dark_blue"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/txt_rule" />
+
+    <com.google.android.material.chip.ChipGroup
+        android:id="@+id/selectedChips"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="25dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/iv_tebak"
+        app:singleLine="false"
+        app:singleSelection="true" />
+
+    <View
+        android:id="@+id/view"
+        android:layout_marginTop="8dp"
+        android:layout_width="0dp"
+        android:layout_height="1.5dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/selectedChips"
+        android:layout_marginStart="26dp"
+        android:layout_marginEnd="25dp"
+        android:background="#C4C4C4"/>
+
+    <com.google.android.material.chip.ChipGroup
+        android:id="@+id/wordChips"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="25dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/view"
+        app:singleLine="false"
+        app:singleSelection="true" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
